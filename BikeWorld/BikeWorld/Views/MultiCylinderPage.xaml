@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.MultiCylinderPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#666666">
+
+                <Frame HasShadow="False" BackgroundColor="#666666" Padding="20" Margin="0,0,0,5" HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="1000CC - SuperSport" TextColor="White" FontSize="Title"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame  BackgroundColor="#44465a" HasShadow="False" CornerRadius="20" Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="H2R_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Kawasaki Ninja-H2R" />
+                        <Image Source="H2Rremovebg.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="20"  
+                               Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="ZX10R_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Kawasaki Ninja-ZX-10R" />
+                        <Image Source="ZX10Rremovebgpreview.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="20"  
+                               Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="CBR1000RR_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Honda CBR1000RR-R" />
+                        <Image Source="cbr1000rrwp.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="20"  
+                               Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="PanigaleV4_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Ducati Panigale V4" />
+                        <Image Source="PanigaleV4.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="20"  
+                               Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="R1_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Yamaha YZF-R1" />
+                        <Image Source="r1icon.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="20"  
+                               Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="GSXR_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Suzuki GSXR-R1000R" />
+                        <Image Source="GSX_R1000Rnobg.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame HasShadow="False" BackgroundColor="#666666" Padding="20" Margin="0,0,0,5" HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Street Fighter" TextColor="White" FontSize="Title"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" HasShadow="False" CornerRadius="20" Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="Z900_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Kawasaki Z900" />
+                        <Image Source="z900nobg.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

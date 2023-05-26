@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.PulsarNS200Page">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior  IconOverride="."/>
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="#666666">
+                <Image Source ="NS200_wp2.png" HorizontalOptions="FillAndExpand" />
+            <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                    <Label Text="Bajaj Pulsar NS200" FontSize="Title" FontAttributes="Bold" TextColor="#ff0000"  HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                    <Label Text="Specifications :" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                    <Image Source="engine3.png" HeightRequest="25" HorizontalOptions="Center" />
+                    <Label Text="Engine -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+            <Label Text="Type : Single Cylinder , Liquid Cooled, 6 Speed, Triple Spark" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+            <Label Text="Engine Capacity : 199.5cc" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+            <Label Text="Bore and Stroke : 72 mm x 49 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+            <Label Text="Valve : DOHC, 4 valves" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="HorsePower(hp) : 24.3 @9750rpm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Torque(Nm) : 18.74 @8000rpm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                    <Image Source="motorcycledimension.png" HeightRequest="25" HorizontalOptions="Center" />
+                    <Label Text="Dimensions -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+            <Label Text="Tyre Size(F) : 100/80-17 52P" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+            <Label Text="Tyre Size(R) : 130/70-17 62P" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+            <Label Text="Wheelbase : 1363 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Ground Clearance : 168 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Seat Height : 800 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Weight(Wet) : 158 Kg" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Fuel Capacity : 12 Ltrs" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                    <Image Source="other2.png" HeightRequest="25" HorizontalOptions="Center" />
+                    <Label Text="Others" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+            <Label Text="Safety : Dual Channel ABS, RLP Control, " TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Available Color(s) : Ebony Black, Pearl Metallic White" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Upside-down Fork, Distance To Empty" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+            <Label Text="Price(Ex-Showroom)-Dual Channel ABS : ₹1,47,859" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
+            <Button Text="To Know More" Clicked="OpenBrowser" ClassId="https://www.bajajauto.com/bikes/pulsar/pulsar-ns200" TextColor="CadetBlue" BackgroundColor="#666666" HorizontalOptions="Start" />
+            <Frame Padding="10" BackgroundColor="#666666">
+                <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#666666">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Text="Menu" Clicked="ButtonOthers" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="Start"></Button>
+                    <Button Grid.Column="2" Text="Main" Clicked="ButtonBack" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="End"></Button>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:BikeWorld.Views"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+       xmlns:fontAwesome="clr-namespace:FontAwesome"
+       Title="BikeWorld"
+       x:Class="BikeWorld.AppShell"
+       FlyoutIcon="menu_Icon.png"
+       FlyoutBackdrop="DarkCyan">
+    <Shell.BackgroundColor>#666666</Shell.BackgroundColor>
+    <Shell.ForegroundColor>darkgray</Shell.ForegroundColor>
+    <Shell.DisabledColor>lightgray</Shell.DisabledColor>
+    <Shell.TitleColor>black</Shell.TitleColor>
+    <Shell.UnselectedColor>gray</Shell.UnselectedColor>
+    <Shell.TabBarIsVisible>true</Shell.TabBarIsVisible>
+    <Shell.FlyoutBackgroundColor>#666666</Shell.FlyoutBackgroundColor>
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+            </Style>
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+            <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{x:OnPlatform UWP=Transparent, iOS=White}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#44465a" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*" Padding="10">
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       HeightRequest="35" />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*">
+                <Image Source="{Binding Icon}"
+                       Margin="5"
+                       HeightRequest="45" />
+                <Label Grid.Column="1"
+                       Text="{Binding Text}"
+                       TextColor="DarkCyan"
+                       TextTransform="Uppercase"
+                       FontAttributes="Bold"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" IsTabStop="False" Shell.TabBarIsVisible="False">
+        <ShellContent Title="About Us" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    <MenuItem Text="MotorCycle" />
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" IsTabStop="False" Shell.TabBarIsVisible="False">
+        <ShellContent Title="Single-Cylinder" Icon="pistonSingle.png" Route="SingleCylinder" ContentTemplate="{DataTemplate local:SingleCylinderPage}" />
+        <ShellContent Title="Multi-Cylinder" Icon="pistonMulti.png" Route="MultiCylinder" ContentTemplate="{DataTemplate local:MultiCylinderPage}" />
+    </FlyoutItem>
+    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems" IsTabStop="False" Shell.TabBarIsVisible="False">
+        <ShellContent Title="Kawasaki Ninja-H2R" Icon="H2Rremovebg.png" ContentTemplate="{DataTemplate local:NinjaH2rPage}" Route="Myh2rpage" />
+        <ShellContent Title="Kawasaki Ninja-ZX-10R" Icon="ZX10Rremovebgpreview.png" ContentTemplate="{DataTemplate local:NinjaZx10r}" Route="MyZx10rPage"/>
+        <ShellContent Title="Kawasaki Z900" Icon="z900nobg.png" ContentTemplate="{DataTemplate local:Z900page}" Route="Myz900page" />
+        <ShellContent Title="Honda CBR1000RR-R" Icon="cbr1000rrwp.png" ContentTemplate="{DataTemplate local:cbr1000rrPage}" Route="MyCbrpage" />
+        <ShellContent Title="Ducati Panigale V4" Icon="PanigaleV4.png" ContentTemplate="{DataTemplate local:Ducativ4rPage}" Route="MyPanigalepage" />
+        <ShellContent Title="Yamaha YZF-R1" Icon="r1icon.png" ContentTemplate="{DataTemplate local:YamahaR1page}" Route="MyYamahaR1page" />
+        <ShellContent Title="Suzuki GSXR-R1000R" Icon="GSX_R1000Rnobg.png" ContentTemplate="{DataTemplate local:Gsxr1000rPage}" Route="MySuzukigsxrpage" />
+    </FlyoutItem>-->
+    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems" IsTabStop="False" Shell.TabBarIsVisible="False">
+        <ShellContent Title="TVS Apache RTR200 4V" Icon="Apache_RTR200_nobg.png" ContentTemplate="{DataTemplate local:ApacheRTR200_4vPage}" Route="MyApache200page" />
+        <ShellContent Title="Bajaj Pulsar NS200" Icon="NS200_nobg.png" ContentTemplate="{DataTemplate local:PulsarNS200Page}" Route="MyNS200page" />
+    </FlyoutItem>-->
+</Shell> 

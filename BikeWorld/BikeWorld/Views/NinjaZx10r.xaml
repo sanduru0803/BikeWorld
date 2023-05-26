@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.NinjaZx10r">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior  IconOverride="."/>
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#666666">
+                <Image Source ="zx10rWp.jpg" HorizontalOptions="FillAndExpand"  />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Kawasaki Ninja ZX-10R" FontSize="Title" FontAttributes="Bold" TextColor="#6c3"  HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Specifications :" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="engine3.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Engine -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Type : Inline 4" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Engine Capacity : 998cc" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Bore and Stroke : 76 mm x 55 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Valve : DOHC, 16 valves" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="HorsePower(hp) : 210 @13200rpm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Torque(Nm) : 114.9 @11400rpm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="motorcycledimension.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Dimensions -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Tyre Size(F) : 120/70ZR17M/C (58W)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Tyre Size(R) : 190/55ZR17M/C (75W)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Wheelbase : 1450 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Ground Clearance : 135 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Seat Height : 835 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Weight(Wet) :207 Kg" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Fuel Capacity : 17 Ltrs" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="other2.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Others" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Available Color(s) : Lime Green" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Features : Integrated Winglets, All LED Lights, TFT Screen, SmartPhone Connectivity " TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Price(Ex-Showroom) : ₹16,15,000" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
+                <Button Text="To Know More" Clicked="OpenBrowser" ClassId="https://kawasaki-india.com/bikes/ninja-zx-10r/" TextColor="CadetBlue" BackgroundColor="#666666" HorizontalOptions="Start" />
+                <Frame Padding="10" BackgroundColor="#666666">
+                    <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#666666">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Text="Menu" Clicked="ButtonOthers" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="Start"></Button>
+                        <Button Grid.Column="2" Text="Main" Clicked="ButtonBack" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="End"></Button>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.ApacheRTR200_4vPage"
+             NavigationPage.HasNavigationBar="False" 
+             NavigationPage.HasBackButton="False">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior  IconOverride="."/>
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#666666">
+                <Image Source ="Apache_rtr200_wp.png" HorizontalOptions="FillAndExpand" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="TVS Apache RTR200 4V" FontSize="Title" FontAttributes="Bold" TextColor="#337ab7"  HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Specifications :" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="engine3.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Engine -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Type : Single Cylinder , Oil Cooled, 5 Speed" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Engine Capacity : 197.75cc" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Bore and Stroke : 66 mm x 57.8 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Valve : DOHC, 4 valves" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="HorsePower(hp) : 20.53 @9000rpm (Sport Mode), 17.3 @7800rpm (Urban/Rain Mode)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Torque(Nm) : 17.25 @7250rpm, 16.51 @5750rpm (Urban/Rain Mode)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="motorcycledimension.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Dimensions -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Tyre Size(F) : 90/90-17 49P" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Tyre Size(R) : 130/70-R17 M/C 62P" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Wheelbase : 1353 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Ground Clearance : 180 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Seat Height : 800 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Weight(Wet) : 152 Kg" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Fuel Capacity : 12 Ltrs" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="other2.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Others" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Safety : Dual Channel ABS, RLP Control, " TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Available Color(s) : Matte Blue, Gloss Black, Pearl White" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Features : Slipper Clutch, GTT, LED Headlight, Ride Modes, Adjustable Levers, Adjustable Suspension, Bluetooth Connect, Lean Angle Mode, Wave Bite Key" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Price(Ex-Showroom)-Single Channel ABS : ₹1,41,287" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
+                <Label Text="Price(Ex-Showroom)-Dual Channel ABS : ₹1,46,187" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
+                <Button Text="To Know More" Clicked="OpenBrowser" ClassId="https://www.tvsmotor.com/tvs-apache/apache-rtr-200-4v" TextColor="CadetBlue" BackgroundColor="#666666" HorizontalOptions="Start" />
+                <Frame Padding="10" BackgroundColor="#666666">
+                    <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#666666">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Text="Menu" Clicked="ButtonOthers" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="Start"></Button>
+                        <Button Grid.Column="2" Text="Main" Clicked="ButtonBack" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="End"></Button>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

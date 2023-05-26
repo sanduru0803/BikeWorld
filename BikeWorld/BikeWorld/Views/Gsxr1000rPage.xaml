@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.Gsxr1000rPage">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior  IconOverride="."/>
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#666666">
+                <Image Source ="GSX_R1000Rwp2.jpg" HorizontalOptions="FillAndExpand" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Suzuki GSXR-R1000R" FontSize="Title" FontAttributes="Bold" TextColor="#007bff"  HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Specifications :" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+                    
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="engine3.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Engine -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Type : Inline 4" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Engine Capacity : 999.8cc" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Bore and Stroke : 76 mm x 55.1 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Valve : DOHC, 16 valves" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="HorsePower(hp) : 200 @14500rpm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Torque(Nm) : 114.9 @10800rpm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="motorcycledimension.png"  HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Dimensions -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Tyre Size(F) : 120/70ZR17M/C (58W)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Tyre Size(R) : 190/55ZR17M/C (75W)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Wheelbase : 1420 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Ground Clearance : 130 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Seat Height : 825 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Weight(Wet) :201 Kg" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Fuel Capacity : 16 Ltrs" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="other2.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Others" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Available Color(s) : Metallic Triton Blue / Metallic Mystic Silver" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Features : Balance Free Front Fork, GSX-RR MotoGP dash, adjustable swingarm pivots, Suzuki Variable Valve Timing (VVT) system" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Price(Ex-Showroom) : ₹14,99,886" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
+                <Button Text="To Know More" Clicked="OpenBrowser" ClassId="https://suzukicycles.com/sportbike/2023/gsx-r1000r" TextColor="CadetBlue" BackgroundColor="#666666" HorizontalOptions="Start" />
+                <Frame Padding="10" BackgroundColor="#666666">
+                    <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#666666">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Text="Menu" Clicked="ButtonOthers" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="Start"></Button>
+                        <Button Grid.Column="2" Text="Main" Clicked="ButtonBack" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="End"></Button>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.SingleCylinderPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="#666666">
+
+                <Frame BackgroundColor="#44465a" HasShadow="False" CornerRadius="20"  Padding="20,10,20,10" Margin="0,0,0,5">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="RTR200_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="TVS Apache RTR200 4V" />
+                        <Image Source="Apache_RTR200_nobg.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#44465a" HasShadow="False" CornerRadius="20" Padding="20,10,20,10" Margin="0,0,0,5" >
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer  NumberOfTapsRequired="1" Tapped="NS200_Tapped"/>
+                    </Frame.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="Bajaj Pulsar NS200" />
+                        <Image Source="NS200_nobg.png" HorizontalOptions="EndAndExpand" WidthRequest="80" Margin="5,0,5,0"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

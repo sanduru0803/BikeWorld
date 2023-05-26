@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeWorld.Views.Ducativ4rPage">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior  IconOverride="."/>
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#666666">
+                <Image Source ="PanigaleWP.jpg" HorizontalOptions="FillAndExpand" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Ducati Panigale V4" FontSize="Title" FontAttributes="Bold" TextColor="#c00"  HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,40,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Label Text="Specifications :" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="engine3.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Engine -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Type : V4" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Engine Capacity : 1103cc(V4), 998cc(V4R)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Bore and Stroke : 81 mm x 53.5 mm(V4), 81 mm x 48.4.5 mm(V4R)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Valve : DOHC, 16 valves" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="HorsePower(hp) : 215.6 @13000rpm(V4), 237.6 @15500rpm(V4R)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Torque(Nm) : 123.6 @9500rpm(V4), 118 @12250rpm(V4R)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="motorcycledimension.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Dimensions -" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Tyre Size(F) : 120/70 ZR17" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Tyre Size(R) : 200/60 ZR17" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10"/>
+                <Label Text="Wheelbase : 1469 mm(V4), 1471 mm(V4R)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Ground Clearance : 130 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Seat Height : 850 mm" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Weight(Wet) :175 Kg(V4), 172 Kg(V4R)" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Fuel Capacity : 17 Ltrs" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Frame BackgroundColor="#44465a" 
+                               HasShadow="False" 
+                               CornerRadius="5" 
+                               Padding="20,10,20,10" 
+                               Margin="0,0,0,5">
+
+                    <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="StartAndExpand">
+                        <Image Source="other2.png" HeightRequest="25" HorizontalOptions="Center" />
+                        <Label Text="Others" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Label Text="Available Color(s) : Red" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Features : EBC Evo2, Power Modes, DLC Coated Pistion, Dry Clutch" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Price(Ex-Showroom) : ₹27,41,000(V4), ₹52,50,0000(V4R)" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
+                <Button Text="To Know More" Clicked="OpenBrowser" ClassId="https://www.ducati.com/ww/en/bikes/panigale/panigale-v4" TextColor="CadetBlue" BackgroundColor="#666666" HorizontalOptions="Start" />
+                <Frame Padding="10" BackgroundColor="#666666">
+                    <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#666666">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Text="Menu" Clicked="ButtonOthers" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="Start"></Button>
+                        <Button Grid.Column="2" Text="Main" Clicked="ButtonBack" BackgroundColor="DarkCyan" CornerRadius="10" HorizontalOptions="End"></Button>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
