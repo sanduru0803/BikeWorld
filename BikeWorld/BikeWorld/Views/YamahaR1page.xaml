@@ -78,7 +78,7 @@
                         <Label Text="Others" TextColor="White" FontAttributes="Italic" FontSize="Medium" />
                     </StackLayout>
                 </Frame>
-                <Label Text="Available Color(s) : Lime Green" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
+                <Label Text="Available Color(s) : Icon Blue, Yamaha Black" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
                 <Label Text="Features : M1 style aerodynamic fairing, Highly efficient crossplane engine, Engine Brake Management System, Launch Control System" TextColor="White" FontAttributes="Italic" FontSize="Medium" Padding="10" />
                 <Label Text="Price(Ex-Showroom) : ₹20,34,032" TextColor="White" FontAttributes="Bold" FontSize="Medium" Padding="10" />
                 <Button Text="To Know More" Clicked="OpenBrowser" ClassId="https://www.yamaha-motor.eu/de/de/products/motorcycles/supersport/r1-2022/" TextColor="CadetBlue" BackgroundColor="#666666" HorizontalOptions="Start" />
